@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Reset</title>
+</head>
+<body>
+    <table align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+        <tr>
+            <td align="center" bgcolor="#01416b" style="padding: 40px 0 30px 0; color: #ffffff; font-size: 28px; font-weight: bold; font-family: Arial, sans-serif;">
+                Password Reset
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#ffffff" style="padding: 40px 30px 40px 30px;">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr><img style="width:50%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/NEC_logo.svg/1200px-NEC_logo.svg.png"></tr>
+                    <tr>
+                        <td style="color: #555555; font-family: Arial, sans-serif; font-size: 16px;">
+                            <p>Dear User,</p>
+                            <p>Your password has expired. Click the link below to reset your password:</p>
+                            <p><a href="{{.URL}}" style="color: #01416b;">Reset Password</a></p>
+                            <p>Thank you,<br>NEC Team</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#01416b" style="padding: 30px 30px 30px 30px;">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td style="color: #ffffff; font-family: Arial, sans-serif; font-size: 14px;" width="75%">
+                            &copy; 2024 NEC COmpany. All rights reserved.
+                        </td>
+                        <td align="right" width="25%">
+                            <a href="{{.URL}}" style="color: #ffffff; text-decoration: none;">Visit Our Website</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+{{.Tracker}}
+</html>

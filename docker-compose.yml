@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+    gophish:
+        container_name: gophish
+        ports:
+            - 3333:3333 #admin port
+            - 8080:8080
+            - 80:80 #phishing port
+        image: gophish/gophish
+#        volumes:
+#            - /docker/gophish/:/opt/gophish/
